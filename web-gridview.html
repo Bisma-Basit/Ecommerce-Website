@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @media(max-width:400px) {
+
+            .navbar,
+            .list,
+            .head-list,
+            .listview,
+            .pages,
+            .newsletter,
+            .footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="back-home logo">
+            <img src="images/logo1.png" alt="">
+            <p class="name">Brand</p>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search" class="search-input">
+            <select class="search-category">
+                <option>All category</option>
+                <option>Mobile Accessory</option>
+                <option>Electonics</option>
+                <option>Smart Phone</option>
+                <option>Modern Tech</option>
+            </select>
+            <a class="category-list" href=""><ion-icon name="chevron-down-outline"></ion-icon></a>
+            <button class="search-button">Search</button>
+        </div>
+
+
+        <div class="btns">
+            <div class="icons">
+                <div class="icon-box">
+                    <a href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
+                    <p>Profile</p>
+                </div>
+                <div class="icon-box">
+                    <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                    <p>Message</p>
+                </div>
+                <div class="icon-box">
+                    <a href="" class="wishlist-link">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <span id="wishlist-count" class="wishlist-badge">0</span>
+                    </a>
+                    <p>Orders</p>
+                </div>
+                <div class="icon-box">
+                    <a href="web-cart.html" class="cart-link">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span id="cart-count" class="cart-badge">3</span>
+                    </a>
+                    <p class="cart-box">My Cart</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="list">
+        <ul class="category">
+            <li>
+                <a class="icon-list1" href=""><ion-icon name="menu-outline"></ion-icon></a>All Category
+            </li>
+            <li>Hot Offers</li>
+            <li>Gift Boxes</li>
+            <li>Project</li>
+            <li>Menu Item</li>
+            <li>Help <a class="icon-list" href=""><ion-icon name="chevron-down-outline"></ion-icon></a>
+            </li>
+        </ul>
+
+        <div class="language">
+            <select class="language-category">
+                <option value="">English,USD</option>
+                <option value="">Urdu,Pakistan</option>
+                <option value="">Turkish,Turkey</option>
+                <option value="">Persian,Iran</option>
+            </select>
+            <a class="lang-list" href=""><ion-icon name="chevron-up-outline"></ion-icon></a>
+        </div>
+
+        <div class="country">
+            <select class="country-category">
+                <option value="">Ship to</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="usa">USA</option>
+                <option value="iran">Iran</option>
+            </select>
+            <img class="country-image" src="images/Country.png" alt="Country Flag">
+            <a class="con-icon" href=""><ion-icon name="chevron-up-outline"></ion-icon></a>
+        </div>
+
+    </section>
+
+    <div class="head-list">
+        <p class="home-page">Home</p>
+        <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+        <p>Clothing</p>
+        <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+        <p>Men's Wear</p>
+        <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+        <p>Summer Clothing</p>
+        <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+    </div>
+
+    <section class="listview">
+
+        <div class="all-list">
+
+            <div class="lists">
+                <p class="heading">Category <span><ion-icon name="chevron-up-outline"></ion-icon></span></p>
+                <ul>
+                    <li>Mobile Accessory</li>
+                    <li>Mobilephones</li>
+                    <li>Electronics</li>
+                    <li>Modern Tech</li>
+                    <li class="blue">See all</li>
+                </ul>
+            </div>
+
+            <div class="lists">
+                <p class="heading">Brands <span><ion-icon name="chevron-up-outline"></ion-icon></span></p>
+                <div class="checkbox">
+                    <input type="checkbox" checked>
+                    <label for="">Samsung</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" checked>
+                    <label for="">Apple</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">Huawei</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" checked>
+                    <label for="">Pocco</label>
+                </div>
+                <div class="checkbox">
+                    <p class="blue">See all</p>
+                </div>
+            </div>
+
+            <div class="lists">
+                <p class="heading">Features <span><ion-icon name="chevron-up-outline"></ion-icon></span></p>
+                <div class="checkbox">
+                    <input type="checkbox" checked>
+                    <label for="">Mettalic</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">Plastic Cover</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">8GB RAM</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">Super Power</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">Large Memory</label>
+                </div>
+                <div class="checkbox">
+                    <p class="blue">See all</p>
+                </div>
+            </div>
+
+            <div class="range-container">
+                <p class="heading">Price Range <span><ion-icon name="chevron-down-outline"></ion-icon></span></p>
+
+            </div>
+
+            <div class="lists">
+                <p class="heading">Condition <span><ion-icon name="chevron-down-outline"></ion-icon></span></p>
+            </div>
+
+            <div class="lists">
+                <p class="heading">Ratings <span><ion-icon name="chevron-down-outline"></ion-icon></span></p>
+            </div>
+
+            <div class="lists">
+                <p class="heading">Manufacturer <span><ion-icon name="chevron-down-outline"></ion-icon></span></p>
+            </div>
+        </div>
+
+        <div class="mids-list">
+            <div class="mid-list">
+                <div class="items-in">
+                    <p>12,911 items in <b>Mobile Accessory</b></p>
+                    <div class="box">
+                        <input type="checkbox" id="verified" checked>
+                        <label for="verified">Verified Only</label>
+                    </div>
+                    <div class="filters">
+                        <select class="filter-category">
+                            <option>Featured</option>
+                            <option>Top Rated</option>
+                        </select>
+                    </div>
+                    <div class="grid">
+                        <span class="icon icon1"><ion-icon name="grid"></ion-icon></span>
+                        <span class="icon icon2"><ion-icon name="reorder-three-sharp"></ion-icon></span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="grids-list">
+                <div class="c-list">
+                    <p class="samsung">Samsung <ion-icon class="icon" name="close-outline"></ion-icon></p>
+                    <p>Apple <ion-icon class="icon" name="close-outline"></ion-icon></p>
+                    <p>Pocco <ion-icon class="icon" name="close-outline"></ion-icon></p>
+                    <p class="metallic">Metallic <ion-icon class="icon" name="close-outline"></ion-icon></p>
+                    <p>4 Star <ion-icon class="icon" name="close-outline"></ion-icon></p>
+                    <p>3 Star <ion-icon class="icon" name="close-outline"></ion-icon></p>
+                    <p class="blue">Clear all filter</p>
+                </div>
+            </div>
+
+            <div data-page="grid" class="produc-list">
+                <div class="produc-detail">
+                    <img class="view-detail" src="images/list1.png" alt="">
+                    <div class="product-content">
+                        <p class="price">$99.5</p>
+                        <p class="p-cancel">$1128.00</p>
+                        <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                        <div class="rating-list">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon class="unfill" name="star"></ion-icon>
+                            </span>
+                            <p class="rate">7.5</p>
+                            <p class="top">GoPro HERO6 4K Action Camera - Black</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produc-detail">
+                    <img class="view-detail" src="images/list7.png" alt="">
+                    <div class="product-content">
+                        <p class="price">$99.5</p>
+                        <p class="p-cancel">$1128.00</p>
+                        <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                        <div class="rating-list">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon class="unfill" name="star"></ion-icon>
+                            </span>
+                            <p class="rate">7.5</p>
+                            <p class="top">GoPro HERO6 4K Action Camera - Black</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produc-detail">
+                    <img class="view-detail" src="images/list2.png" alt="">
+                    <div class="product-content">
+                        <p class="price">$99.5</p>
+                        <p class="p-cancel">$1128.00</p>
+                        <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                        <div class="rating-list">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon class="unfill" name="star"></ion-icon>
+                            </span>
+                            <p class="rate">7.5</p>
+                            <p class="top">GoPro HERO6 4K Action Camera - Black</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produc-detail">
+                    <img class="view-detail" src="images/gadget3.png" alt="">
+                    <div class="product-content">
+                        <p class="price">$99.5</p>
+                        <p class="p-cancel">$1128.00</p>
+                        <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                        <div class="rating-list">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon class="unfill" name="star"></ion-icon>
+                            </span>
+                            <p class="rate">7.5</p>
+                            <p class="top">GoPro HERO6 4K Action Camera - Black</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produc-detail">
+                    <img class="view-detail" src="images/camer.png" alt="">
+                    <div class="product-content">
+                        <p class="price">$99.5</p>
+                        <p class="p-cancel">$1128.00</p>
+                        <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                        <div class="rating-list">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon class="unfill" name="star"></ion-icon>
+                            </span>
+                            <p class="rate">7.5</p>
+                            <p class="top">GoPro HERO6 4K Action Camera - Black</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produc-detail">
+                    <img class="view-detail" src="images/list7.png" alt="">
+                    <div class="product-content">
+                        <p class="price">$99.5</p>
+                        <p class="p-cancel">$1128.00</p>
+                        <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                        <div class="rating-list">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon class="unfill" name="star"></ion-icon>
+                            </span>
+                            <p class="rate">7.5</p>
+                            <p class="top">GoPro HERO6 4K Action Camera - Black</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produc-detail">
+                    <img class="view-detail" src="images/laptop.png" alt="">
+                    <div class="product-content">
+                        <p class="price">$99.5</p>
+                        <p class="p-cancel">$1128.00</p>
+                        <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                        <div class="rating-list">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon class="unfill" name="star"></ion-icon>
+                            </span>
+                            <p class="rate">7.5</p>
+                            <p class="top">GoPro HERO6 4K Action Camera - Black</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produc-detail">
+                    <img class="view-detail" src="images/watch.png" alt="">
+                    <div class="product-content">
+                        <p class="price">$99.5</p>
+                        <p class="p-cancel">$1128.00</p>
+                        <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                        <div class="rating-list">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon class="unfill" name="star"></ion-icon>
+                            </span>
+                            <p class="rate">7.5</p>
+                            <p class="top">GoPro HERO6 4K Action Camera - Black</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produc-detail">
+                    <img class="view-detail" src="images/list1.png" alt="">
+                    <div class="product-content">
+                        <p class="price">$99.5</p>
+                        <p class="p-cancel">$1128.00</p>
+                        <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                        <div class="rating-list">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon class="unfill" name="star"></ion-icon>
+                            </span>
+                            <p class="rate">7.5</p>
+                            <p class="top">GoPro HERO6 4K Action Camera - Black</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="pages">
+        <div class="page-no"></div>
+        <select class="page-category">
+            <option value="">Show 10</option>
+            <option value="">Show 11</option>
+            <option value="">Show 12</option>
+            <option value="">Show 13</option>
+            <option value="">Show 14</option>
+        </select>
+
+        <div class="numbers">
+            <span class="border"><ion-icon name="chevron-back-outline"></ion-icon></span>
+            <span class="border1">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span class="border2"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+        </div>
+    </div>
+    </div>
+
+    <section class=" newsletter">
+        <h4>Subscribe on our newsletter</h4>
+        <p class="news-text">Get daily news on upcoming offers from many suppliers all over the world</p>
+
+        <div class="text-box">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="text" placeholder="Email">
+            <button class="email">Subscribe</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="images/logo1.png" alt="">
+            <p>Brand</p>
+        </div>
+
+        <div class="links">
+            <ul class="link1">
+                <h3>About</h3>
+                <li>About Us</li>
+                <li>Find Us</li>
+                <li>Categories</li>
+                <li>Blog</li>
+            </ul>
+
+            <ul class="link2">
+                <h3>Partnership</h3>
+                <li>About Us</li>
+                <li>Find Us</li>
+                <li>Categories</li>
+                <li>Blog</li>
+            </ul>
+
+            <ul class="link3">
+                <h3>Information</h3>
+                <li>Help Centre</li>
+                <li>Money Refund</li>
+                <li>Shipping</li>
+                <li>Contact Us</li>
+            </ul>
+
+            <ul class="link4">
+                <h3>For Users</h3>
+                <li>Login</li>
+                <li>Register</li>
+                <li>Settings</li>
+                <li>My Order</li>
+            </ul>
+
+            <div class="getapps">
+                <ul class="link5">
+                    <h3>Get Apps</h3>
+                    <li class="app"><img src="images/app1.png" alt=""></li>
+                    <li class="app"><img src="images/app2.png" alt=""></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="text1">Best information about the company gies here but now lorem ipsum is</p>
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="row">
+            <div class="copyright">
+                <i class="fa-regular fa-copyright"></i>
+                <p>2023 Ecommerce</p>
+            </div>
+
+            <div class="cont">
+                <img src="images/flag1.png" alt="">
+                <p>English</p>
+                <a href=""><ion-icon name="chevron-up-outline"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <section class="mob-menu">
+        <div class="menu">
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+                <p>Sign in | Register</p>
+            </div>
+
+            <div class="all-menu">
+                <div class="menu-list">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <p>Home</p>
+                </div>
+                <div class="menu-list">
+                    <ion-icon name="list-outline"></ion-icon>
+                    <p>Categories</p>
+                </div>
+                <div class="menu-list">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>Favorite</p>
+                </div>
+                <div class="menu-list">
+                    <ion-icon name="albums-outline"></ion-icon>
+                    <p>My Orders</p>
+                </div>
+                <hr>
+                <div class="menu-list">
+                    <ion-icon name="globe-outline"></ion-icon>
+                    <p>English | USD</p>
+                </div>
+                <div class="menu-list">
+                    <ion-icon name="headset-outline"></ion-icon>
+                    <p>Contact Us</p>
+                </div>
+                <div class="menu-list">
+                    <ion-icon name="business-outline"></ion-icon>
+                    <p>About</p>
+                </div>
+                <hr>
+                <div class="menu-list">
+                    <ion-icon name="reader-outline"></ion-icon>
+                    <p>User Agreement</p>
+                </div>
+                <div class="menu-list">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <p>Partnership</p>
+                </div>
+                <div class="menu-list">
+                    <ion-icon name="shield-half-outline"></ion-icon>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

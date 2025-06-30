@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .search-bar {
+            display: none;
+        }
+
+        @media(max-width:400px) {
+            .logo-head {
+                display: flex;
+                align-items: center;
+                width: 400px;
+                height: 36px;
+                margin-top: -110px;
+                margin-left: 20px;
+                gap: 10px;
+            }
+
+            .logo-head .logo-icon {
+                margin-top: 5px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .logo-head p {
+                width: 300px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .search-bar {
+                display: none;
+            }
+
+            .btns .no-icon,
+            .icon-box p,
+            .list {
+                display: none;
+            }
+
+            .btns {
+                display: flex;
+                justify-content: center;
+                margin-top: -110px;
+                margin-left: -90%;
+            }
+
+            .btns .icons {
+                display: flex;
+                gap: 20px;
+                margin-left: -450%;
+            }
+
+            .icon-box ion-icon {
+                font-size: 25px;
+                color: black;
+                font-weight: bold;
+            }
+
+            #cart-box {
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo-head">
+            <span class="logo-icon">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </span>
+            <p>Shopping Cart</p>
+        </div>
+        <div class="back-home logo">
+            <img src="images/logo1.png" alt="">
+            <p class="name">Brand</p>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search" class="search-input">
+            <select class="search-category">
+                <option>All category</option>
+                <option>Mobile Accessory</option>
+                <option>Electonics</option>
+                <option>Smart Phone</option>
+                <option>Modern Tech</option>
+            </select>
+            <a class="category-list" href=""><ion-icon name="chevron-down-outline"></ion-icon></a>
+            <button class="search-button">Search</button>
+        </div>
+
+
+        <div class="btns">
+            <div class="icons">
+                <div class="icon-box">
+                    <a href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
+                    <p>Profile</p>
+                </div>
+                <div class="no-icon icon-box">
+                    <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                    <p>Message</p>
+                </div>
+                <div class="no-icon icon-box">
+                    <a href="" class="wishlist-link">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <span id="wishlist-count" class="wishlist-badge">0</span>
+                    </a>
+                    <p>Orders</p>
+                </div>
+                <div class="icon-box">
+                    <a href="web-cart.html" class="cart-link">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span id="cart-count" class="cart-badge">3</span>
+                    </a>
+                    <p class="cart-box">My Cart</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart">
+        <h4>My Cart (3)</h4>
+        <div class="cart-box">
+            <div class="cart-item">
+                <img src="images/item1.png" alt="">
+                <p class="bold">T-shirts with multiple colors, for men and lady
+                    <i id="cart-dots" class="fa-solid fa-ellipsis-vertical"></i>
+                </p>
+                <p class="price">$78.99</p>
+                <p class="cart-text">Size: medium, Color: blue, Material: Plastic</p>
+                <p class="cart-text">Seller: Artel Market</p>
+                <select class="option" id="quantity">
+                    <option>Qty:9</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <div class="button">
+                    <button class="red">Remove</button>
+                    <button>Save for Later</button>
+                </div>
+                <div class="mob-quantity">
+                    <div class="minus"><i class="fa-solid fa-minus"></i></div>
+                    <div class="num">2</div>
+                    <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="images/cart2.png" alt="">
+                <p class="bold">T-shirts with multiple colors, for men and lady
+                    <i id="cart-dots" class="fa-solid fa-ellipsis-vertical"></i>
+                </p>
+                <p class="price">$39.00</p>
+                <p class="cart-text">Size: medium, Color: blue, Material: Plastic</p>
+                <p class="cart-text">Seller: Best factory LLC</p>
+                <select class="option" id="quantity">
+                    <option>Qty:3</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <div class="button">
+                    <button class="red">Remove</button>
+                    <button>Save for Later</button>
+                </div>
+                <div class="mob-quantity">
+                    <div class="minus"><i class="fa-solid fa-minus"></i></div>
+                    <div class="num">1</div>
+                    <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="images/cart1.png" alt="">
+                <p class="bold">T-shirts with multiple colors, for men and lady
+                    <i id="cart-dots" class="fa-solid fa-ellipsis-vertical"></i>
+                </p>
+                <p class="price">$170.50</p>
+                <p class="cart-text">Size: medium, Color: blue, Material: Plastic</p>
+                <p class="cart-text">Seller: Artel Market</p>
+                <select class="option" name="" id="quantity">
+                    <option>Qty: 1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <div class="button">
+                    <button class="red">Remove</button>
+                    <button>Save for Later</button>
+                </div>
+                <div class="mob-quantity">
+                    <div class="minus"><i class="fa-solid fa-minus"></i></div>
+                    <div class="num">2</div>
+                    <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                </div>
+            </div>
+            <div class="back-button">
+                <a href="web-listview.html">
+                    <button type="button" class="shop">
+                        <ion-icon name="arrow-back-outline"></ion-icon> Back to Shop
+                    </button> </a>
+                <button type="button" class="remove">Remove all</button>
+            </div>
+
+        </div>
+
+        <div class="side-box">
+
+            <div class="coupon">
+                <p>Have a Coupon?</p>
+                <input type="text" placeholder="Add a Coupon">
+                <button>Apply</button>
+            </div>
+
+            <div class="subtotal">
+                <div class="total">
+                    <p>Subtotal: <span>$1403.97</span></p>
+                    <p class="discount">Discount: <span>-$60.00</span></p>
+                    <p class="tax">Tax: <span>+$14.00</span></p>
+                </div>
+                <hr />
+                <h5>Total: <span>$1357.97</span></h5>
+                <button class="checkout-btn">Checkout</button>
+                <div class="payment-methods">
+                    <img src="images/amex.png" alt="Amex" />
+                    <img src="images/mastercard.png" alt="Mastercard" />
+                    <img src="images/paypal.png" alt="PayPal" />
+                    <img src="images/visa.png" alt="Visa" />
+                    <img src="images/applepay.png" alt="Apple Pay" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="delivery">
+        <div class="shipping-box">
+            <i class="fa-solid fa-lock"></i>
+            <div class="text">
+                <p>Secure Payment</p>
+                <p class="grey">Have you ever finally just </p>
+            </div>
+        </div>
+
+        <div class="shipping-box">
+            <i class="fa-solid fa-message"></i>
+            <div class="text">
+                <p>Customer Support</p>
+                <p class="grey">Have you ever finally just </p>
+            </div>
+        </div>
+
+        <div class="shipping-box">
+            <i class="fa-solid fa-truck"></i>
+            <div class="text">
+                <p>Free Delivery</p>
+                <p class="grey">Have you ever finally just </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="saved-later">
+        <h4>Saved for Later</h4>
+        <div class="later-save">
+            <div class="later-product" data-id="sku456">
+                <img src="images/later2.png" alt="">
+                <div class="later-content">
+                    <p class="price">$99.50</p>
+                    <p>GoPro HERO6 4K Action Camera - Black</p>
+                    <div class="btn">
+                        <button class="move-to-cart"><ion-icon class="icon" name="cart-outline"></ion-icon> Move to
+                            Cart</button>
+                        <button class="mob-remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="later-product" data-id="sku456">
+                <img src="images/later1.png" alt="">
+                <div class="later-content">
+                    <p class="price">$99.50</p>
+                    <p>GoPro HERO6 4K Action Camera - Black</p>
+                    <div class="btn">
+                        <button class="move-to-cart"><ion-icon class="icon" name="cart-outline"></ion-icon> Move to
+                            Cart</button>
+                        <button class="mob-remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="later-product" data-id="sku456">
+                <img src="images/related2.png" alt="">
+                <div class="later-content">
+                    <p class="price">$99.50</p>
+                    <p>GoPro HERO6 4K Action Camera - Black</p>
+                    <div class="btn">
+                        <button class="move-to-cart"><ion-icon class="icon" name="cart-outline"></ion-icon> Move to
+                            Cart</button>
+                        <button class="mob-remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="later-product" data-id="sku456">
+                <img src="images/later3.png" alt="">
+                <div class="later-content">
+                    <p class="price">$99.50</p>
+                    <p>GoPro HERO6 4K Action Camera - Black</p>
+                    <div class="btn">
+                        <button class="move-to-cart"><ion-icon class="icon" name="cart-outline"></ion-icon> Move to
+                            Cart</button>
+                        <button class="mob-remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-banner">
+        <div class="promo-content">
+            <h3>Super discount on more than 100 USD</h3>
+            <p>Have you ever finally just write dummy info</p>
+        </div>
+        <button class="promo-button">Shop now</button>
+    </section>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="images/logo1.png" alt="">
+            <p>Brand</p>
+        </div>
+
+        <div class="links">
+            <ul class="link1">
+                <h3>About</h3>
+                <li>About Us</li>
+                <li>Find Us</li>
+                <li>Categories</li>
+                <li>Blog</li>
+            </ul>
+
+            <ul class="link2">
+                <h3>Partnership</h3>
+                <li>About Us</li>
+                <li>Find Us</li>
+                <li>Categories</li>
+                <li>Blog</li>
+            </ul>
+
+            <ul class="link3">
+                <h3>Information</h3>
+                <li>Help Centre</li>
+                <li>Money Refund</li>
+                <li>Shipping</li>
+                <li>Contact Us</li>
+            </ul>
+
+            <ul class="link4">
+                <h3>For Users</h3>
+                <li>Login</li>
+                <li>Register</li>
+                <li>Settings</li>
+                <li>My Order</li>
+            </ul>
+
+            <div class="getapps">
+                <ul class="link5">
+                    <h3>Get Apps</h3>
+                    <li class="app"><img src="images/app1.png" alt=""></li>
+                    <li class="app"><img src="images/app2.png" alt=""></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="text1">Best information about the company gies here but now lorem ipsum is</p>
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="row">
+            <div class="copyright">
+                <i class="fa-regular fa-copyright"></i>
+                <p>2023 Ecommerce</p>
+            </div>
+
+            <div class="cont">
+                <img src="images/flag1.png" alt="">
+                <p>English</p>
+                <a href=""><ion-icon name="chevron-up-outline"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+
+        <button class="menue-toggle" id="menu-toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <div class="nav-top">
+            <div class="logo">
+                <img src="images/logo1.png" alt="">
+                <p class="name">Brand</p>
+            </div>
+
+            <div class="nav-content" id="nav-content">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" class="search-input">
+                    <select class="search-category">
+                        <option>All category</option>
+                        <option>Mobile Accessory</option>
+                        <option>Electonics</option>
+                        <option>Smart Phone</option>
+                        <option>Modern Tech</option>
+                    </select>
+                    <a class="category-list" href=""><ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <button class="search-button">Search</button>
+                </div>
+
+
+                <div class="btns">
+                    <div class="icons">
+                        <div class="icon-box">
+                            <a href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
+                            <p>Profile</p>
+                        </div>
+                        <div class="no-icon icon-box">
+                            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                            <p>Message</p>
+                        </div>
+                        <div class="no-icon icon-box">
+                            <a href="" class="wishlist-link">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <span id="wishlist-count" class="wishlist-badge">0</span>
+                            </a>
+                            <p>Orders</p>
+                        </div>
+                        <div class="icon-box">
+                            <a href="web-cart.html" class="cart-link">
+                                <ion-icon name="cart-outline"></ion-icon>
+                                <span id="cart-count" class="cart-badge">3</span>
+                            </a>
+                            <p class="cart-box">My Cart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <section class="list">
+        <ul class="category">
+            <li>
+                <a class="icon-list1" href=""><ion-icon name="menu-outline"></ion-icon></a>All Category
+            </li>
+            <li>Hot Offers</li>
+            <li>Gift Boxes</li>
+            <li>Project</li>
+            <li>Menu Item</li>
+            <li>Help <a class="icon-list" href=""><ion-icon name="chevron-down-outline"></ion-icon></a>
+            </li>
+        </ul>
+
+        <div class="language">
+            <select class="language-category">
+                <option value="">English,USD</option>
+                <option value="">Urdu,Pakistan</option>
+                <option value="">Turkish,Turkey</option>
+                <option value="">Persian,Iran</option>
+            </select>
+            <a class="lang-list" href=""><ion-icon name="chevron-up-outline"></ion-icon></a>
+        </div>
+
+        <div class="country">
+            <select class="country-category">
+                <option value="">Ship to</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="usa">USA</option>
+                <option value="iran">Iran</option>
+            </select>
+            <img class="country-image" src="images/Country.png" alt="Country Flag">
+            <a class="con-icon" href=""><ion-icon name="chevron-up-outline"></ion-icon></a>
+        </div>
+
+    </section>
+
+    <section class="mob-list">
+        <p>All Category</p>
+        <p>Gadgets</p>
+        <p>Clothes</p>
+        <p>Accessory</p>
+    </section>
+
+    <section class="banner">
+        <div class="left-list">
+            <ul>
+                <li class="active">Automobile</li>
+                <li class="clothes-link">Clothes and Wears</li>
+                <li class="clothes-link">Home Interiors</li>
+                <li class="clothes-link">Computer and Tech</li>
+                <li class="clothes-link">Tools, Equipments</li>
+                <li class="clothes-link">Sports and Outdoor</li>
+                <li class="clothes-link">Animal and Pets</li>
+                <li class="clothes-link">Machinery Tools</li>
+                <li class="clothes-link">More Category</li>
+            </ul>
+        </div>
+
+        <div class="banner-main">
+            <img src="images/banner.png" alt="">
+        </div>
+
+        <div class="banner-right">
+            <div class="join-now">
+                <a class="icon" href=""><ion-icon name="person-circle-outline"></ion-icon></a>
+                <p>Hi, user let's get started</p>
+                <button class="btn">Join now</button>
+                <button class="log-btn">Log in</button>
+            </div>
+
+            <div class="banner-text">
+                <p>Get US $10 off with a new supplier</p>
+            </div>
+
+            <div class="banner-text1">
+                <p>Send quotes with supplier preferences</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="deals-offers">
+        <div class="offers">
+            <div class="deal-text">
+                <h4>Deals and Offers</h4>
+                <p>Hygiene Equipments</p>
+            </div>
+            <div class="times">
+                <div class="no-box box"><span class="value">4</span><span class="labels">Days</span></div>
+                <div class="box"><span class="value">13</span><span class="labels">Hour</span></div>
+                <div class="box"><span class="value">34</span><span class="labels">Mins</span></div>
+                <div class="box"><span class="value">56</span><span class="labels">Secs</span></div>
+            </div>
+        </div>
+
+        <div class="detail-view containers">
+            <div class="product-cards">
+                <img src="images/watch.png" alt="">
+                <p>Smart Watches</p>
+                <p class="off">-25%</p>
+            </div>
+
+            <div class="product-cards">
+                <img src="images/laptop.png" alt="">
+                <p>Laptops</p>
+                <p class="off">-15%</p>
+            </div>
+
+            <div class="product-cards">
+                <img src="images/camer.png" alt="">
+                <p>GoPro Cameras</p>
+                <p class="off">-40%</p>
+            </div>
+
+            <div class="non-decor product-cards">
+                <img src="images/headphone.png" alt="">
+                <p>Headphones</p>
+                <p class="off">-25%</p>
+            </div>
+
+            <div class="non-decor product-cards">
+                <img src="images/mobile.png" alt="">
+                <p>Canon Cameras</p>
+                <p class="off">-25%</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-decor">
+        <div class="left-decor">
+            <img src="images/home-decore.png" alt="">
+            <p>Home and Outdoor</p>
+            <button>Source Now <ion-icon class="home-icon" name="arrow-forward-outline"></ion-icon></button>
+        </div>
+
+        <div class="detail-view decor">
+            <div class="decor-box">
+                <img src="images/home1.png" alt="">
+                <p>Sofa Chair</p>
+                <p class="p-color">From USD 19</p>
+            </div>
+            <div class="decor-box">
+                <img src="images/home2.png" alt="">
+                <p>Sofa & Chair</p>
+                <p class="p-color">From USD 19</p>
+            </div>
+            <div class="decor-box">
+                <img src="images/home3.png" alt="">
+                <p>Kitchen Dishes</p>
+                <p class="p-color">From USD 19</p>
+            </div>
+            <div class="non-decor decor-box">
+                <img src="images/home4.png" alt="">
+                <p>Watches</p>
+                <p class="p-color">From USD 19</p>
+            </div>
+            <div class="non-decor decor-box">
+                <img src="images/home5.png" alt="">
+                <p>Kitchen Mixer</p>
+                <p class="p-color">From USD 19</p>
+            </div>
+            <div class="non-decor decor-box">
+                <img src="images/home6.png" alt="">
+                <p>Blender</p>
+                <p class="p-color">From USD 19</p>
+            </div>
+            <div class="non-decor decor-box">
+                <img src="images/home7.png" alt="">
+                <p>Home Appliance</p>
+                <p class="p-color">From USD 19</p>
+            </div>
+            <div class="non-decor decor-box">
+                <img src="images/home8.png" alt="">
+                <p>Cooffe Maker</p>
+                <p class="p-color">From USD 19</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="consumer-gadget">
+        <div class="left-gadget">
+            <img src="images/consumer-gadget.png" alt="">
+            <p>Consumer Electonics and Gadget</p>
+            <button>Source Now <ion-icon class="consumer-icon" name="arrow-forward-outline"></ion-icon></button>
+        </div>
+
+        <div class="detail-view gadget">
+            <div class="gadget-box">
+                <img src="images/watch.png" alt="">
+                <p>Sofa Chair</p>
+                <p class="g-color">From USD 19</p>
+            </div>
+            <div class="gadget-box">
+                <img src="images/camer.png" alt="">
+                <p>Sofa & Chair</p>
+                <p class="g-color">From USD 19</p>
+            </div>
+            <div class="gadget-box">
+                <img src="images/gadget1.png" alt="">
+                <p>Kitchen Dishes</p>
+                <p class="g-color">From USD 19</p>
+            </div>
+            <div class="non-decor gadget-box">
+                <img src="images/gadget2.png" alt="">
+                <p>Watches</p>
+                <p class="g-color">From USD 19</p>
+            </div>
+            <div class="non-decor gadget-box">
+                <img src="images/headphone.png" alt="">
+                <p>Kitchen Mixer</p>
+                <p class="g-color">From USD 19</p>
+            </div>
+            <div class="non-decor gadget-box">
+                <img src="images/laptop.png" alt="">
+                <p>Blender</p>
+                <p class="g-color">From USD 19</p>
+            </div>
+            <div class="non-decor gadget-box">
+                <img src="images/gadget3.png" alt="">
+                <p>Home Appliance</p>
+                <p class="g-color">From USD 19</p>
+            </div>
+            <div class="non-decor gadget-box">
+                <img src="images/gadget4.png" alt="">
+                <p>Cooffe Maker</p>
+                <p class="g-color">From USD 19</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-section">
+        <div class="bannertext">
+            <h2>An easy way to send requests to all suppliers</h2>
+            <p class="non-decor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt.</p>
+            <button class="no-web">Send Inquiry</button>
+        </div>
+        <div class="non-decor banner-form">
+            <form>
+                <h3>Send quote to suppliers</h3>
+                <input type="text" placeholder="What item you need?" />
+                <textarea placeholder="Type more details"></textarea>
+                <div class="quantity-group">
+                    <input type="text" placeholder="Quantity" />
+                    <select>
+                        <option>Pcs</option>
+                        <option>Kg</option>
+                    </select>
+                </div>
+                <button type="submit">Send inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="items">
+        <h4>Recommended Items</h4>
+        <div class="detail-view item">
+            <div class="item-box">
+                <img src="images/item1.png" alt="">
+                <p class="price">$10.30</p>
+                <p>T-shirts with multiple colors, for men</p>
+            </div>
+
+            <div class="item-box">
+                <img src="images/item2.png" alt="">
+                <p class="price">$10.30</p>
+                <p>Jeans shorts for men blue color</p>
+            </div>
+
+            <div class="item-box">
+                <img src="images/item3.png" alt="">
+                <p class="price">$12.50</p>
+                <p>Brown winter coat medium size</p>
+            </div>
+
+            <div class="item-box">
+                <img src="images/item4.png" alt="">
+                <p class="price">$34.00</p>
+                <p>Jeans bag for travel for men</p>
+            </div>
+
+            <div class="item-box">
+                <img src="images/item10.png" alt="">
+                <p class="price">$99.00</p>
+                <p>Leather wallet</p>
+            </div>
+
+            <div class="item-box">
+                <img src="images/item5.png" alt="">
+                <p class="price">$9.99</p>
+                <p>Canon camera black, 100x zoom</p>
+            </div>
+
+            <div class="item-box">
+                <img src="images/item6.png" alt="">
+                <p class="price">$8.99</p>
+                <p>Headset for gaming with mic</p>
+            </div>
+
+            <div class="item-box">
+                <img src="images/item7.png" alt="">
+                <p class="price">$10.30</p>
+                <p>Smartwatch silver color modern</p>
+            </div>
+
+            <div class="item-box">
+                <img src="images/item8.png" alt="">
+                <p class="price">$10.30</p>
+                <p>Blue wallet for men leather metarfial</p>
+            </div>
+
+            <div class="item-box">
+                <img src="images/item9.png" alt="">
+                <p class="price">$80.95</p>
+                <p>Jeans bag for travel for men</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h4>Our Services</h4>
+        <div class="service">
+            <div class="extra-service">
+                <img src="images/service1.png" alt="">
+                <span><ion-icon name="search-outline"></ion-icon></span>
+                <p>Source from Industry Hubs</p>
+            </div>
+            <div class="extra-service">
+                <img src="images/service2.png" alt="">
+                <span><ion-icon name="card-outline"></ion-icon></span>
+                <p>Customize Your Productss</p>
+            </div>
+            <div class="extra-service">
+                <img src="images/service3.png" alt="">
+                <span><ion-icon name="send-outline"></ion-icon></span>
+                <p>Fast, reliable shipping by ocean or air</p>
+            </div>
+            <div class="extra-service">
+                <img src="images/service4.png" alt="">
+                <span><ion-icon name="shield-half-outline"></ion-icon></span>
+                <p>Product monitoring and inspection</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="suppliers">
+        <h4>Suppliers Region</h4>
+        <div class="region">
+            <div class="country-region">
+                <img src="images/flag2.png" alt="">
+                <h6>Arabic Emirates</h6>
+                <p>shopname.ae</p>
+            </div>
+
+            <div class="country-region">
+                <img src="images/flag3.png" alt="">
+                <h6>Australia</h6>
+                <p>shopname.ae</p>
+            </div>
+
+            <div class="country-region">
+                <img src="images/flag1.png" alt="">
+                <h6>United States</h6>
+                <p>shopname.ae</p>
+            </div>
+
+            <div class="country-region">
+                <img src="images/flag10.png" alt="">
+                <h6>Russia</h6>
+                <p>shopname.ru</p>
+            </div>
+
+            <div class="country-region">
+                <img src="images/flag8.png" alt="">
+                <h6>Italy</h6>
+                <p>shopname.it</p>
+            </div>
+
+            <div class="country-region">
+                <img src="images/flag5.png" alt="">
+                <h6>Denmark</h6>
+                <p>denmark.com.dk</p>
+            </div>
+
+            <div class="country-region">
+                <img src="images/flag6.png" alt="">
+                <h6>France</h6>
+                <p>shopname.fr</p>
+            </div>
+
+            <div class="country-region">
+                <img src="images/flag2.png" alt="">
+                <h6>Arabic Emirates</h6>
+                <p>shopname.ae</p>
+            </div>
+
+            <div class="country-region">
+                <img src="images/flag4.png" alt="">
+                <h6>China</h6>
+                <p>shopname.ae</p>
+            </div>
+
+            <div class="country-region">
+                <img src="images/flag7.png" alt="">
+                <h6>Great Britain</h6>
+                <p>shopname.co.uk</p>
+            </div>
+        </div>
+    </section>
+
+    <section class=" newsletter">
+        <h4>Subscribe on our newsletter</h4>
+        <p class="news-text">Get daily news on upcoming offers from many suppliers all over the world</p>
+
+        <div class="text-box">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="text" placeholder="Email">
+            <button class="email">Subscribe</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="images/logo1.png" alt="">
+            <p>Brand</p>
+        </div>
+
+        <div class="links">
+            <ul class="link1">
+                <h3>About</h3>
+                <li>About Us</li>
+                <li>Find Us</li>
+                <li>Categories</li>
+                <li>Blog</li>
+            </ul>
+
+            <ul class="link2">
+                <h3>Partnership</h3>
+                <li>About Us</li>
+                <li>Find Us</li>
+                <li>Categories</li>
+                <li>Blog</li>
+            </ul>
+
+            <ul class="link3">
+                <h3>Information</h3>
+                <li>Help Centre</li>
+                <li>Money Refund</li>
+                <li>Shipping</li>
+                <li>Contact Us</li>
+            </ul>
+
+            <ul class="link4">
+                <h3>For Users</h3>
+                <li>Login</li>
+                <li>Register</li>
+                <li>Settings</li>
+                <li>My Order</li>
+            </ul>
+
+            <div class="getapps">
+                <ul class="link5">
+                    <h3>Get Apps</h3>
+                    <li class="app"><img src="images/app1.png" alt=""></li>
+                    <li class="app"><img src="images/app2.png" alt=""></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="text1">Best information about the company gies here but now lorem ipsum is</p>
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="row">
+            <div class="copyright">
+                <i class="fa-regular fa-copyright"></i>
+                <p>2023 Ecommerce</p>
+            </div>
+
+            <div class="cont">
+                <img src="images/flag1.png" alt="">
+                <p>English</p>
+                <a href=""><ion-icon name="chevron-up-outline"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
